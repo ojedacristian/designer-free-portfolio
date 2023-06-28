@@ -14,7 +14,7 @@ const Home: React.FC = () => {
           <button>Contact</button>
         </nav>
       </header>
-      <section className='flex justify-between mt-16'>
+      <section className='mt-16'>
         <div className='w-1/2 flex flex-col font-bold'>
           <h2 className='text-brand-yellow text-xl'>UI/UX DESIGNER</h2>
           <h1 className='text-6xl mt-3 leading-tight'>Hello, my name is Madelyn Torff</h1>
@@ -24,10 +24,8 @@ const Home: React.FC = () => {
             <button className='px-6 py-2 rounded-lg border-2 border-gray-800'>LinkedIn</button>
           </div>
         </div>
-
-          <Image src='/images/beliakin.png' width={720} height={629} alt='image' className='relative -top-28 -right-28 -z-10 mask bg-brand-yellow' />
-
       </section>
+      <Image src='/images/beliakin.png' width={720} height={629} alt='image' className='absolute top-0 right-0 -z-10 mask bg-brand-yellow' />
     </main>
   )
 }
