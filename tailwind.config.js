@@ -14,7 +14,10 @@ module.exports = {
       },
       colors: {
         brand: {
-          yellow: '#FDC435'
+          yellow: '#FDC435',
+          grayLow: '#9a9fa8',
+          grayMedium: '#828282',
+          grayHigh: '#25282b'
         }
       }
     }
