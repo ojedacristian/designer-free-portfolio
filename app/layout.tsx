@@ -17,7 +17,7 @@ export const metadata = {
 
 export const RootLayout: React.FC<PropsWithChildren> = ({ children }) => {
   return (
-    <html lang="en">
+    <html lang="en" className='scroll-smooth'>
       <body className={`${raleway.className} ${raleway.className} bg-gray-50`}>
         <main className='container mx-auto px-32'>
           <header className='flex justify-between pt-3'>
@@ -26,8 +26,8 @@ export const RootLayout: React.FC<PropsWithChildren> = ({ children }) => {
             </div>
             <nav className='flex gap-12 text-lg leading-7'>
               <Link href='/about'>About</Link>
-              <button>Projects</button>
-              <button>Contact</button>
+              <Link href='/projects'>Projects</Link>
+              <Link href='/contact'>Contact</Link>
             </nav>
           </header>
           {children}
