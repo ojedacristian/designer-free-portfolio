@@ -1,0 +1,88 @@
+{
+    "navigation": {
+        "headerTitle": "Madelyn Torff",
+        "footerTitle": "Madelyn Torff 2023",
+        "linksHeader": [
+            {
+                "label": "About",
+                "href": "/about"
+            },
+            {
+                "label": "Projects",
+                "href": "/projects"
+            },
+            {
+                "label": "Contact",
+                "href": "/contact"
+            }
+        ],
+        "linksFooter": [
+            {
+                "label": "Instagram page",
+                "icon": "instagram-logo.svg",
+                "href": "https://instagram.com"
+            },
+            {
+                "label": "Linkedin Page",
+                "icon": "linkedin-logo.svg",
+                "href": "https://linkedin.com"
+            },
+            {
+                "label": "Mail",
+                "icon": "mail-icon.svg",
+                "href": "mailto:abc@gmail.com"
+            }
+        ]
+    },
+    "home": {
+        "title": "Home",
+        "heading": "Hello, my name is Madelyn Torff",
+        "subheading": "UI/UX DESIGNER",
+        "desc": "Short text with details about you, what you do or your professional career. You can add more information on the about page.",
+        "cta1": {
+            "desc": "Projects",
+            "link": "#projects"
+        },
+        "cta2": {
+            "desc": "LinkedIn",
+            "link": "https://linkedin.com"
+        }
+    },
+    "projects": {
+        "title": "Projects",
+        "cta": "View Project",
+        "projects": [
+            {
+                "id": "1",
+                "name": "Project Name",
+                "desc": "I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.",
+                "image": "project1.png"
+            },
+            {
+                "id": "2",
+                "name": "Project Name",
+                "desc": "What was your role, your deliverables, if the project was personal, freelancing.",
+                "image": "project2.png"
+            },
+            {
+                "id": "3",
+                "name": "Project Name",
+                "desc": "You can also add in this description the type of the project, if it was for web, mobile, electron.",
+                "image": "project3.png"
+            }
+        ]
+    },
+    "about": {
+        "title": "About me",
+        "desc": "Nisl arcu, scelerisque neque ut. Tincidunt amet, tempor duis tortor neque auctor dis ipsum. Pretium cras amet odio amet eleifend id sed cras sed. Aliquet risus posuere aliquet imperdiet sit.",
+        "cta": "Resume",
+        "image": "aboutimg.png"
+    },
+    "contact": {
+        "title": "Contact",
+        "cta": "Send",
+        "inputName": "Name",
+        "inputEmail": "Email",
+        "inputMessage": "Message"
+    }
+}
