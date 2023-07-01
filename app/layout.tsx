@@ -4,6 +4,7 @@ import './globals.css'
 import { Raleway } from 'next/font/google'
 import Image from 'next/image'
 import Link from 'next/link'
+import data from '@/components/data/data.json'
 
 export const raleway = Raleway({
   subsets: ['latin'],
@@ -16,28 +17,35 @@ export const metadata = {
 }
 
 export const RootLayout: React.FC<PropsWithChildren> = ({ children }) => {
+  const { headerTitle, linksHeader, linksFooter, footerTitle } = data.navigation
   return (
     <html lang="en" className='scroll-smooth'>
       <body className={`${raleway.className} ${raleway.className} bg-gray-50`}>
         <main className='container mx-auto px-32'>
           <header className='flex justify-between pt-3'>
             <div className='text-lg'>
-              <Link href='/'>Madelyn Torff</Link>
+              <Link href='/'>{ headerTitle }</Link>
             </div>
             <nav className='flex gap-12 text-lg leading-7'>
-              <Link href='/about'>About</Link>
-              <Link href='/projects'>Projects</Link>
-              <Link href='/contact'>Contact</Link>
+              {
+                linksHeader.map(link => (
+                  <Link key={link.href} href={ link.href }>{ link.label}</Link>
+                ))
+              }
             </nav>
           </header>
           {children}
           <footer className='flex flex-col items-center'>
             <div className='flex justify-center gap-6'>
-              <Image src='images/instagram-logo.svg' alt='Instagram logo' width={48} height={48} />
-              <Image src='images/linkedin-logo.svg' alt='linkedin logo' width={48} height={48} />
-              <Image src='images/mail-icon.svg' alt='mail icon' width={48} height={48} />
+              {
+                linksFooter.map(link => (
+                  <a key={link.href} href={ link.href} target='_blank' rel="noreferrer">
+                    <Image src={ `images/${link.icon}`} alt={link.label} width={48} height={48} />
+                  </a>
+                ))
+              }
             </div>
-            <small className='text-brand-grayMedium text-base mt-8 mb-20' >Madelyn Torff 2021</small>
+            <small className='text-brand-grayMedium text-base mt-8 mb-20'>{ footerTitle }</small>
           </footer>
         </main>
       </body>
