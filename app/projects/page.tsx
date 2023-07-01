@@ -2,7 +2,7 @@ import { Card } from '@/components/Card'
 import data from '@/components/data/data.json'
 import React from 'react'
 
-const Projects: React.FC = () => {
+const ProjectsPage: React.FC = () => {
   const { title, projects } = data.projects
   return (
     <section className='flex flex-col items-center mt-10 mb-36' id='projects'>
@@ -23,4 +23,4 @@ const Projects: React.FC = () => {
   )
 }
 
-export default Projects
+export default ProjectsPage
