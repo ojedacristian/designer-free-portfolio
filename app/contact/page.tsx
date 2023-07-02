@@ -7,7 +7,7 @@ export const ContactPage: React.FC = () => {
     <section className='flex flex-col items-center mt-10 mb-36' id='projects'>
         <h1 className='text-5xl font-bold leading-normal'>{title}</h1>
         <span className='bg-brand-yellow w-24 h-1 rounded-sm'></span>
-        <form className='flex flex-col text-brand-grayHigh'>
+        <form className='flex flex-col text-brand-grayHigh mt-12'>
             <label htmlFor="name" className='text-base mb-2'>{inputName}</label>
             <input type="text" name='name' id='name' className='rounded-lg bg-white mb-6 border border-gray-200 w-96 h-10 px-4 focus:border-brand-yellow focus:border-2 focus:outline-none' />
             <label htmlFor="email" className='text-base mb-2'>{inputEmail}</label>

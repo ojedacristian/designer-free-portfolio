@@ -21,8 +21,8 @@ export const RootLayout: React.FC<PropsWithChildren> = ({ children }) => {
   return (
     <html lang="en" className='scroll-smooth'>
       <body className={`${raleway.className} ${raleway.className} bg-gray-50`}>
-        <main className='container mx-auto px-32'>
-          <header className='flex justify-between pt-3'>
+        <main className='container mx-auto px-4 md:px-16 lg:px-32'>
+          <header className='flex flex-col items-center md:flex-row md:justify-between pt-3'>
             <div className='text-lg'>
               <Link href='/'>{ headerTitle }</Link>
             </div>
