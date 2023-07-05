@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { type PropsWithChildren } from 'react'
 import './globals.css'
@@ -5,6 +6,10 @@ import { Raleway } from 'next/font/google'
 import Image from 'next/image'
 import Link from 'next/link'
 import data from '@/components/data/data.json'
+import PageTransition from '../components/PageTransition'
+import { usePathname } from 'next/navigation'
+import IsHome from '../components/IsHome'
+import { motion } from 'framer-motion'
 
 export const raleway = Raleway({
   subsets: ['latin'],
@@ -18,23 +23,38 @@ export const metadata = {
 
 export const RootLayout: React.FC<PropsWithChildren> = ({ children }) => {
   const { headerTitle, linksHeader, linksFooter, footerTitle } = data.navigation
+  const pathname = usePathname()
+
   return (
     <html lang="en" className='scroll-smooth'>
       <body className={`${raleway.className} ${raleway.className} bg-gray-50`}>
-        <main className='container mx-auto px-4 md:px-16 lg:px-32'>
+        <main className='container mx-auto px-4 md:px-16 lg:px-32 relative'>
           <header className='flex flex-col gap-4 items-center md:flex-row md:justify-between pt-3'>
             <div className='text-lg self-start'>
-              <Link href='/'>{ headerTitle }</Link>
+              <Link href='/'>
+                { headerTitle }
+                </Link>
             </div>
             <nav className='flex gap-12 text-lg leading-7'>
               {
                 linksHeader.map(link => (
-                  <Link key={link.href} href={ link.href }>{ link.label}</Link>
+                  <>
+                    <Link className='relative' key={link.href} href={ link.href }>
+                      { link.label}
+                      {
+                        pathname === link.href &&
+                        <motion.span layoutId='navspan' className='absolute left-0 top-full block h-[2px] w-full bg-brand-yellow'/>
+                      }
+                      </Link>
+                  </>
                 ))
               }
             </nav>
           </header>
-          {children}
+          <PageTransition className='relative top-0'>
+            {children}
+          </PageTransition>
+          <IsHome/>
           <footer className='flex flex-col items-center'>
             <div className='flex justify-center gap-6'>
               {
