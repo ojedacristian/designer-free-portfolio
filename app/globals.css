@@ -7,4 +7,6 @@
     mask-position: bottom left;
     mask-size: cover;
     mask-repeat: no-repeat;
+    padding: 0 3em;
+    padding-top: 2em;
 }
