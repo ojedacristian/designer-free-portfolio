@@ -1,6 +1,6 @@
 {
     "navigation": {
-        "headerTitle": "Madelyn Torff",
+        "headerTitle": "Cristian Ojeda",
         "footerTitle": "Madelyn Torff 2023",
         "linksHeader": [
             {
@@ -62,7 +62,8 @@
                 "id": "2",
                 "name": "Project Name",
                 "desc": "What was your role, your deliverables, if the project was personal, freelancing.",
-                "image": "project2.png"
+                "image": "project2.png",
+                "odd": true
             },
             {
                 "id": "3",

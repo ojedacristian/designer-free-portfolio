@@ -9,12 +9,13 @@ const ProjectsPage: React.FC = () => {
         <h1 className='text-5xl font-bold leading-normal'>{title}</h1>
         <span className='bg-brand-yellow w-24 h-1 rounded-sm'></span>
         {
-            projects.map(({ id, desc, image, name }) => (
+            projects.map(({ id, desc, image, name, odd }) => (
                 <Card
                     key={id}
                     title={name}
                     desc={desc}
                     img={image}
+                    odd={odd}
                 />
 
             ))
