@@ -22,8 +22,8 @@ export const RootLayout: React.FC<PropsWithChildren> = ({ children }) => {
     <html lang="en" className='scroll-smooth'>
       <body className={`${raleway.className} ${raleway.className} bg-gray-50`}>
         <main className='container mx-auto px-4 md:px-16 lg:px-32'>
-          <header className='flex flex-col items-center md:flex-row md:justify-between pt-3'>
-            <div className='text-lg'>
+          <header className='flex flex-col gap-4 items-center md:flex-row md:justify-between pt-3'>
+            <div className='text-lg self-start'>
               <Link href='/'>{ headerTitle }</Link>
             </div>
             <nav className='flex gap-12 text-lg leading-7'>
@@ -45,7 +45,7 @@ export const RootLayout: React.FC<PropsWithChildren> = ({ children }) => {
                 ))
               }
             </div>
-            <small className='text-brand-grayMedium text-base mt-8 mb-20'>{ footerTitle }</small>
+            <small className='text-brand-grayMedium text-base mt-4 sm:mt-8 mb-4 sm:mb-20'>{ footerTitle }</small>
           </footer>
         </main>
       </body>
