@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import React from 'react'
 import data from '@/components/data/data.json'
+import { type NextPage } from 'next'
 
-export const AboutPage: React.FC = () => {
+const AboutPage: NextPage = () => {
   const { cta, desc, image, title } = data.about
   return (
         <section className='flex items-center mt-10 mb-36'>

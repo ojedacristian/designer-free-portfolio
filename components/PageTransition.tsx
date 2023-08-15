@@ -2,13 +2,14 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { usePathname } from 'next/navigation'
+import { type NextPage } from 'next'
 
 interface Props {
   children: React.ReactNode
   className?: string
 }
 
-const PageTransition: React.FC<Props> = ({ children, className = '' }) => {
+const PageTransition: NextPage<Props> = ({ children, className = '' }) => {
   const pathname = usePathname()
   return (
       <motion.div

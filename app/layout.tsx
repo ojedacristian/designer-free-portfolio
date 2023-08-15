@@ -1,4 +1,3 @@
-'use client'
 import React from 'react'
 import { type PropsWithChildren } from 'react'
 import './globals.css'
@@ -7,10 +6,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import data from '@/components/data/data.json'
 import PageTransition from '../components/PageTransition'
-import { usePathname } from 'next/navigation'
 import IsHome from '../components/IsHome'
-import { motion } from 'framer-motion'
 import { type Metadata } from 'next'
+import { NavUnderline } from '@/components/NavUnderline'
 
 export const raleway = Raleway({
   subsets: ['latin'],
@@ -25,7 +23,6 @@ export const metadata: Metadata = {
 
 export const RootLayout: React.FC<PropsWithChildren> = ({ children }) => {
   const { headerTitle, linksHeader, linksFooter, footerTitle } = data.navigation
-  const pathname = usePathname()
 
   return (
     <html lang="en" className='scroll-smooth'>
@@ -44,8 +41,7 @@ export const RootLayout: React.FC<PropsWithChildren> = ({ children }) => {
                     <Link className='relative' key={link.href} href={ link.href }>
                       { link.label}
                       {
-                        pathname === link.href &&
-                        <motion.span layoutId='navspan' className='absolute left-0 top-full block h-[2px] w-full bg-brand-yellow'/>
+                        <NavUnderline href={link.href}/>
                       }
                       </Link>
                   </>

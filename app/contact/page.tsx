@@ -1,7 +1,7 @@
 import React from 'react'
 import data from '@/components/data/data.json'
 
-export const ContactPage: React.FC = () => {
+const ContactPage: React.FC = () => {
   const { title, inputName, inputEmail, inputMessage, cta } = data.contact
   return (
     <section className='flex flex-col items-center mt-10 mb-16 sm:mb-36' id='projects'>

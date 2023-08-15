@@ -1,6 +1,7 @@
 # UX/UI Designer Portfolio
 
-<img src='https://raw.githubusercontent.com/ojedacristian/designer-free-portfolio/master/public/uxportfoliotemplate.webp' alt='Portfolio libre de uso' />
+<img src='https://raw.githubusercontent.com/ojedacristian/designer-free-portfolio/master/public/images/uxportfoliotemplate.webp' 
+alt='Portfolio libre de uso' />
 
 Portfolio construido con NextJS, TailwindCSS y Framer Motion.
 Libre de uso.
