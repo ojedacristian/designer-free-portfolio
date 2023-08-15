@@ -8,7 +8,7 @@ const IsHome: React.FC = () => {
     <>
         {
             pathname === '/' &&
-            <Image src='/images/pexels.png' width={720} height={629} alt='image' className='absolute top-0 right-0 -z-10 mask bg-brand-yellow' />
+            <Image src='/images/pexels.webp' width={720} height={629} alt='image' className='absolute top-0 right-0 -z-10 mask bg-brand-yellow' />
         }
     </>
   )

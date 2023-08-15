@@ -56,20 +56,20 @@
                 "id": "1",
                 "name": "Project Name",
                 "desc": "I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.",
-                "image": "project1.png"
+                "image": "project1.webp"
             },
             {
                 "id": "2",
                 "name": "Project Name",
                 "desc": "What was your role, your deliverables, if the project was personal, freelancing.",
-                "image": "project2.png",
+                "image": "project2.webp",
                 "odd": true
             },
             {
                 "id": "3",
                 "name": "Project Name",
                 "desc": "You can also add in this description the type of the project, if it was for web, mobile, electron.",
-                "image": "project3.png"
+                "image": "project3.webp"
             }
         ]
     },
@@ -77,7 +77,7 @@
         "title": "About me",
         "desc": "Nisl arcu, scelerisque neque ut. Tincidunt amet, tempor duis tortor neque auctor dis ipsum. Pretium cras amet odio amet eleifend id sed cras sed. Aliquet risus posuere aliquet imperdiet sit.",
         "cta": "Resume",
-        "image": "aboutimg.png"
+        "image": "aboutimg.webp"
     },
     "contact": {
         "title": "Contact",
